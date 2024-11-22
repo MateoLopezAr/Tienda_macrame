@@ -1,20 +1,20 @@
-/* Estilo global */
 body {
     font-family: 'Arial', sans-serif;
-    background-color: #f0f8f5; /* Color suave verde/azul claro */
+    background-color: #f0f8f5;
     color: #333;
     margin: 0;
     padding: 0;
     box-sizing: border-box;
 }
+
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
 }
-/* Banner */
+
 header.banner {
-    background-color: #023C40; /* Azul suave */
+    background-color: #023C40;
     color: #AAABBC;
     text-align: center;
     padding: 40px 0;
@@ -25,9 +25,8 @@ h1 {
     font-size: 2.5rem;
 }
 
-/* Navegación */
 nav {
-    background-color: #C7F0BD; /* Verde suave */
+    background-color: #C7F0BD;
     padding: 10px 0;
     text-align: center;
 }
@@ -51,10 +50,9 @@ nav a {
 }
 
 nav a:hover {
-    color: #89c2d9; /* Azul suave */
+    color: #89c2d9;
 }
 
-/* Sección de Sobre Nosotros */
 .sobre-nosotros {
     background-color: #754668;
     padding: 50px 20px;
@@ -62,29 +60,16 @@ nav a:hover {
 }
 
 .sobre-nosotros h2 {
-    color: #FFFBBD; /* Verde suave */
+    color: #FFFBBD;
     font-size: 2rem;
     margin-bottom: 20px;
 }
 
-/* Sección de Productos */
 .productos {
-    background-color: #e8f1f2; /* Azul muy suave */
+    background-color: #e8f1f2;
     padding: 50px 20px;
     display: flex;
     justify-content: space-around;
-}
-
-.productos-div{
-    background-color: #023C40;
-    height: 4cm;
-    text-align: center;
-    margin-top: 0px;
-    
-}
-.productos-pg h2{
-    color: #fff;
-    text-align: center;
 }
 
 .producto {
@@ -108,7 +93,6 @@ nav a:hover {
     color: #333;
 }
 
-/* Sección de Reseñas */
 .reseñas {
     background-color: #ffffff;
     padding: 50px 20px;
@@ -122,7 +106,6 @@ nav a:hover {
     margin: 20px 0;
 }
 
-/* Pie de página */
 footer {
     background-color: #89c2d9;
     color: white;
@@ -130,16 +113,26 @@ footer {
     padding: 20px;
 }
 
-/* Animaciones */
 .fade-in {
     opacity: 0;
     transform: translateY(50px);
-    animation: fadeIn 1s forwards;
+    transition: opacity 1s, transform 1s;
 }
 
-@keyframes fadeIn {
-    to {
-        opacity: 1;
-        transform: translateY(0);
-    }
+.fade-in.appear {
+    opacity: 1;
+    transform: translateY(0);
+}
+
+.grid-container {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 10px;
+}
+
+.box {
+    background-color: #023C40;
+    color: white;
+    text-align: center;
+    padding: 20px;
 }

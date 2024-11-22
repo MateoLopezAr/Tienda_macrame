@@ -37,4 +37,3 @@ document.addEventListener('DOMContentLoaded', function () {
         usuarioNombreDiv.innerHTML = `<a href="login.html">Iniciar Sesión</a>`;
     }
 });
-
