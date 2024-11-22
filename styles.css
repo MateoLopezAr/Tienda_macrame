@@ -1,101 +1,145 @@
 /* Estilo global */
 body {
-    font-family: Arial, sans-serif;
-    background-color: #f7f7f7;
+    font-family: 'Arial', sans-serif;
+    background-color: #f0f8f5; /* Color suave verde/azul claro */
+    color: #333;
     margin: 0;
     padding: 0;
-    color: #333;
+    box-sizing: border-box;
 }
-
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
 /* Banner */
 header.banner {
-    background-color: #2d6a4f;
+    background-color: #023C40; /* Azul suave */
+    color: #AAABBC;
+    text-align: center;
+    padding: 40px 0;
+}
+
+h1 {
+    margin: 0;
+    font-size: 2.5rem;
+}
+
+/* Navegación */
+nav {
+    background-color: #C7F0BD; /* Verde suave */
+    padding: 10px 0;
+    text-align: center;
+}
+
+nav ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+
+nav li {
+    display: inline;
+    margin: 0 20px;
+}
+
+nav a {
+    text-decoration: none;
+    color: black;
+    font-size: 1.2rem;
+    transition: color 0.3s ease;
+}
+
+nav a:hover {
+    color: #89c2d9; /* Azul suave */
+}
+
+/* Sección de Sobre Nosotros */
+.sobre-nosotros {
+    background-color: #754668;
+    padding: 50px 20px;
+    text-align: center;
+}
+
+.sobre-nosotros h2 {
+    color: #FFFBBD; /* Verde suave */
+    font-size: 2rem;
+    margin-bottom: 20px;
+}
+
+/* Sección de Productos */
+.productos {
+    background-color: #e8f1f2; /* Azul muy suave */
+    padding: 50px 20px;
+    display: flex;
+    justify-content: space-around;
+}
+
+.productos-div{
+    background-color: #023C40;
+    height: 4cm;
+    text-align: center;
+    margin-top: 0px;
+    
+}
+.productos-pg h2{
     color: #fff;
     text-align: center;
+}
+
+.producto {
+    background-color: #ffffff;
+    border-radius: 10px;
     padding: 20px;
-}
-
-/* Contenedor del formulario */
-.form-container {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    min-height: 100vh;
-    background-color: #fff;
-}
-
-section {
-    background-color: #fff;
-    padding: 20px;
-    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
-    width: 100%;
-    max-width: 350px;
-    border-radius: 8px;
-}
-
-/* Títulos */
-h2 {
+    width: 30%;
     text-align: center;
-    margin-bottom: 20px;
-    font-size: 24px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.producto img {
+    width: 100%;
+    height: auto;
+    border-radius: 8px;
+    margin-bottom: 15px;
+}
+
+.producto p {
+    font-size: 1.2rem;
     color: #333;
 }
 
-/* Estilos de los inputs y selects */
-input[type="text"],
-input[type="email"],
-input[type="password"],
-select {
-    width: 100%;
-    padding: 12px;
-    margin-bottom: 15px;
-    border: 1px solid #ccc;
-    border-radius: 4px;
-    font-size: 16px;
-    background-color: #f9f9f9;
-}
-
-/* Botones */
-button {
-    width: 100%;
-    padding: 12px;
-    background-color: #2d6a4f;
-    color: white;
-    border: none;
-    border-radius: 4px;
-    font-size: 16px;
-    cursor: pointer;
-}
-
-button:hover {
-    background-color: #1f4c3b;
-}
-
-/* Enlaces */
-a {
-    text-decoration: none;
-    color: #2d6a4f;
-    display: block;
+/* Sección de Reseñas */
+.reseñas {
+    background-color: #ffffff;
+    padding: 50px 20px;
     text-align: center;
-    margin-top: 15px;
 }
 
-a:hover {
-    text-decoration: underline;
+.reseñas p {
+    font-style: italic;
+    font-size: 1.2rem;
+    color: #333;
+    margin: 20px 0;
 }
 
 /* Pie de página */
 footer {
+    background-color: #89c2d9;
+    color: white;
     text-align: center;
     padding: 20px;
-    background-color: #2d6a4f;
-    color: #fff;
 }
 
-footer a {
-    color: #81b29a;
+/* Animaciones */
+.fade-in {
+    opacity: 0;
+    transform: translateY(50px);
+    animation: fadeIn 1s forwards;
 }
 
-footer a:hover {
-    text-decoration: underline;
+@keyframes fadeIn {
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
 }

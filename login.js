@@ -1,14 +1,16 @@
 document.getElementById('login-form').addEventListener('submit', function(event) {
     event.preventDefault();
 
-    const email = document.getElementById('email').value;
-    const password = document.getElementById('password').value;
+    const correo = document.getElementById('login-correo').value;
+    const contraseña = document.getElementById('login-contraseña').value;
 
-    const usuario = JSON.parse(localStorage.getItem('usuario'));
+    const usuarioGuardado = JSON.parse(localStorage.getItem('usuario'));
 
-    if (usuario && usuario.email === email && usuario.password === password) {
+    if (usuarioGuardado && usuarioGuardado.correo === correo && usuarioGuardado.contraseña === contraseña) {
+        alert('Inicio de sesión exitoso.');
         window.location.href = 'index.html';
     } else {
         alert('Correo o contraseña incorrectos.');
     }
 });
+    
