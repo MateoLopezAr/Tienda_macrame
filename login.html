@@ -1,30 +1,24 @@
 <!DOCTYPE html>
-<html lang="es">
+<html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Iniciar Sesión - Arte en Macramé</title>
+    <title>Iniciar Sesión</title>
     <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-    <header class="banner">
-        <h1>Arte en Macramé</h1>
-    </header>
+    <div class="container">
+        <h1>Iniciar Sesión</h1>
+        <form id="loginForm">
+            <label for="loginEmail">Correo electrónico:</label>
+            <input type="email" id="loginEmail" required>
 
-    <section class="formulario fade-in">
-        <h2>Iniciar Sesión</h2>
-        <form id="login-form">
-            <input type="email" id="login-correo" placeholder="Correo Electrónico" required>
-            <input type="password" id="login-contraseña" placeholder="Contraseña" required>
+            <label for="loginPassword">Contraseña:</label>
+            <input type="password" id="loginPassword" required>
+
             <button type="submit">Iniciar Sesión</button>
         </form>
-        <p>¿No tienes cuenta? <a href="registro.html">Regístrate aquí</a></p>
-    </section>
-
-    <footer>
-        <p>&copy; 2024 Arte en Macramé. Todos los derechos reservados.</p>
-    </footer>
-
+    </div>
     <script src="login.js"></script>
 </body>
 </html>
