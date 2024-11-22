@@ -81,16 +81,15 @@ nav a:hover {
     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
 }
 
-.producto img {
-    width: 100%;
-    height: auto;
-    border-radius: 8px;
-    margin-bottom: 15px;
+.productopg {
+    background-color: #ffffff;
+    padding: 50px 20px;
+    text-align: center;
 }
 
 .producto p {
     font-size: 1.2rem;
-    color: #333;
+    color: #ffffff;
 }
 
 .reseñas {
@@ -102,7 +101,7 @@ nav a:hover {
 .reseñas p {
     font-style: italic;
     font-size: 1.2rem;
-    color: #333;
+    color: #ffffff;
     margin: 20px 0;
 }
 
@@ -132,6 +131,13 @@ footer {
 
 .box {
     background-color: #023C40;
+    color: white;
+    text-align: center;
+    padding: 20px;
+}
+
+.boxp {
+    background-color: #754668;
     color: white;
     text-align: center;
     padding: 20px;
