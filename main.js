@@ -21,9 +21,9 @@ document.addEventListener('DOMContentLoaded', function () {
         usuarioNombreDiv.textContent = `Hola, ${usuarioLogueado.nombre}`;
         navOpciones.innerHTML = `
             <li><a href="#">Inicio</a></li>
-            <li><a href="#">Sobre Nosotros</a></li>
+            <li><a href="#us">Sobre Nosotros</a></li>
             <li><a href="productos.html">Productos</a></li>
-            <li><a href="#">Reseñas</a></li>
+            <li><a href="#res">Reseñas</a></li>
             <li id="cerrarSesion"><a href="#">Cerrar Sesión</a></li>
         `;
 
